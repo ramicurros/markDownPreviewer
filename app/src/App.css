@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #221E22;
+  font-family: 'Anybody', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  overflow: hidden;
+}
+
+.wrapper { 
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+}
+
+.markdownTop {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+  width: calc(100% - 2px);
+  border: 0.5px solid #413F42;
+  color: rgba(240, 248, 255, 0.8);
+  background-color: #221E22;
+  font-family: 'Anybody', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.headerText {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.editorBody {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: auto;
+  min-height: calc(100% - 50px);
+}
+
+#line-counter {
+  width: 25px;
+  text-align: center;
+  color: #7C7C7C;
+  font-size: 14px;
+  padding: 35px 0px;
+  border-right: 1px solid #413F42;
+  font-family: 'Anybody', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#editor {
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: #413F42;
+  color: aliceblue;
+  font-size: 16px;
+  width: calc(100% - 25px);
+  overflow: hidden;
+  padding: 35px;
+  min-height: 100%;
+}
+
+#preview{
+  min-height: calc(100% - 120px);
+  background-color: #413F42;
+  color: aliceblue;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-size: 19px;
+  padding: 35px;
+}
